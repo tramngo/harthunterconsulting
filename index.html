@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harthunter Consulting | Grant Writing & Nonprofit Funding Strategy | Tram Ngo</title>
+  <meta name="description" content="Tram Ngo is a strategic grant writing partner for US-based nonprofit Executive Directors. With 14+ years of experience and $9M+ secured for nonprofits nationwide, Harthunter Consulting takes the entire grant process off your plate.">
+  <meta name="keywords" content="grant writing consultant, nonprofit grant writing, federal grant proposals, foundation grants, nonprofit funding strategy, grant writer for hire, grant writing services">
+  <meta property="og:title" content="Harthunter Consulting | Grant Writing for Nonprofits">
+  <meta property="og:description" content="Strategic funding partner for nonprofit Executive Directors. 14+ years of experience. $9M+ secured.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sand:       #faf8f4;
+      --sand-mid:   #f3ede4;
+      --sand-dark:  #ece5d9;
+      --terra:      #c05328;
+      --terra-dark: #9e4220;
+      --terra-soft: #f8ece6;
+      --green:      #3b6535;
+      --green-dark: #2b4c27;
+      --green-soft: #e8f0e6;
+      --ink:        #1b1816;
+      --ink-soft:   #433e3a;
+      --muted:      #786f68;
+      --border:     #e4ddd3;
+      --white:      #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--sand);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 248, 244, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 3rem);
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.015em;
+      color: var(--ink);
+    }
+    .nav-logo span { color: var(--terra); }
+
+    .nav-cta {
+      background: var(--terra);
+      color: var(--white);
+      padding: 0.55rem 1.3rem;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: background 0.18s;
+    }
+    .nav-cta:hover { background: var(--terra-dark); }
+
+    /* ── HERO ── */
+    .hero-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: clamp(4.5rem, 10vw, 8rem) clamp(1.25rem, 4vw, 3rem) clamp(3.5rem, 7vw, 6rem);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 1.5rem;
+    }
+
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.1rem;
+    }
+    .ornament-line {
+      height: 1px;
+      width: 36px;
+      background: var(--terra);
+      flex-shrink: 0;
+    }
+
+    .hero-wrap h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 6.5vw, 4.75rem);
+      font-weight: 500;
+      line-height: 1.1;
+      max-width: 780px;
+      margin-bottom: 1.75rem;
+      color: var(--ink);
+    }
+    .hero-wrap h1 em {
+      font-style: italic;
+      color: var(--terra);
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 1.8vw, 1.175rem);
+      font-weight: 300;
+      color: var(--ink-soft);
+      max-width: 560px;
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--terra);
+      color: var(--white);
+      padding: 0.9rem 2.1rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: background 0.18s, transform 0.15s;
+    }
+    .btn-primary:hover {
+      background: var(--terra-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      display: inline-block;
+      color: var(--ink-soft);
+      font-size: 1rem;
+      font-weight: 400;
+      padding-bottom: 2px;
+      border-bottom: 1.5px solid var(--border);
+      transition: color 0.18s, border-color 0.18s;
+    }
+    .btn-ghost:hover {
+      color: var(--terra);
+      border-color: var(--terra);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(1.5rem, 4vw, 3rem);
+      margin-top: 4rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem;
+      font-weight: 600;
+      color: var(--terra);
+      line-height: 1;
+    }
+
+    .stat-lbl {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+      font-weight: 400;
+      max-width: 140px;
+    }
+
+    /* ── PROBLEM ── */
+    .problem {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    .problem-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 4vw, 3rem);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: start;
+    }
+
+    .problem h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.9rem, 3.8vw, 3rem);
+      font-weight: 500;
+      line-height: 1.2;
+      position: sticky;
+      top: 90px;
+    }
+    .problem h2 em {
+      font-style: italic;
+      color: #a3cfa0;
+    }
+
+    .problem-body p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.8;
+      margin-bottom: 1.75rem;
+    }
+
+    .pain-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .pain-list li {
+      display: flex;
+      gap: 0.85rem;
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.65;
+    }
+
+    .pain-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--terra);
+      flex-shrink: 0;
+      margin-top: 0.52em;
+    }
+
+    /* ── SERVICES ── */
+    .services-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 4vw, 3rem);
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 0.9rem;
+    }
+
+    .section-h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 500;
+      line-height: 1.18;
+      color: var(--ink);
+      max-width: 560px;
+      margin-bottom: 0.9rem;
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--muted);
+      max-width: 520px;
+      line-height: 1.75;
+      margin-bottom: 3rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .s-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem 1.75rem;
+      transition: box-shadow 0.22s, transform 0.22s;
+    }
+    .s-card:hover {
+      box-shadow: 0 10px 40px rgba(28, 24, 22, 0.09);
+      transform: translateY(-3px);
+    }
+
+    .s-icon {
+      width: 46px;
+      height: 46px;
+      background: var(--sand-mid);
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .s-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: 0.7rem;
+    }
+
+    .s-card p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    /* ── ABOUT ── */
+    .about {
+      background: var(--sand-mid);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 4vw, 3rem);
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: clamp(2.5rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .about-left {
+      position: sticky;
+      top: 90px;
+    }
+
+    .about-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.08;
+      margin-bottom: 0.4rem;
+    }
+
+    .about-role {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 1.75rem;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .about-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+
+    .about-right p {
+      font-size: 1.02rem;
+      font-weight: 300;
+      color: var(--ink-soft);
+      line-height: 1.85;
+      margin-bottom: 1.2rem;
+    }
+    .about-right p:last-child { margin-bottom: 0; }
+    .about-right strong {
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    /* ── CONTACT ── */
+    .contact-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 4vw, 3rem);
+      text-align: center;
+    }
+
+    .contact-wrap .section-h2 {
+      margin: 0 auto 0.9rem;
+      max-width: 100%;
+    }
+
+    .contact-wrap .section-sub {
+      margin: 0 auto 2.75rem;
+      max-width: 100%;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .c-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      transition: box-shadow 0.2s, transform 0.18s;
+    }
+    .c-card:hover {
+      box-shadow: 0 8px 28px rgba(28,24,22,0.09);
+      transform: translateY(-2px);
+    }
+
+    .c-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .c-icon.terra  { background: var(--terra-soft); }
+    .c-icon.green  { background: var(--green-soft); }
+    .c-icon.blue   { background: #e8eef8; font-size: 1rem; font-weight: 700; color: #0077b5; font-family: 'DM Sans', sans-serif; }
+    .c-icon.cal    { background: #f0ebf8; font-size: 1.1rem; }
+
+    .c-type {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .c-value {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--ink);
+      word-break: break-all;
+      line-height: 1.4;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      padding: 2rem clamp(1.25rem, 4vw, 3rem);
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+    footer a {
+      color: rgba(255,255,255,0.55);
+      transition: color 0.18s;
+    }
+    footer a:hover { color: rgba(255,255,255,0.85); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .problem-inner { grid-template-columns: 1fr; }
+      .problem h2 { position: static; }
+      .services-grid { grid-template-columns: 1fr; }
+      .about-inner { grid-template-columns: 1fr; }
+      .about-left { position: static; }
+      .contact-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 520px) {
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .btn-primary { text-align: center; }
+      .hero-stats { gap: 1.5rem 2rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Site navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Hart<span>hunter</span> Consulting</a>
+      <a href="https://calendly.com/tramngo2/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">Book a Free Call</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section aria-label="Introduction">
+      <div class="hero-wrap">
+        <div class="ornament">
+          <div class="ornament-line"></div>
+          <span class="eyebrow">Grant Writing &amp; Nonprofit Funding Strategy</span>
+        </div>
+
+        <h1>You run the mission.<br><em>I'll fund it.</em></h1>
+
+        <p class="hero-sub">
+          You're a nonprofit Executive Director already wearing too many hats. Navigating complex grant databases, decoding federal guidelines, and writing 50-page proposals shouldn't be one of them. That's exactly where I come in.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://calendly.com/tramngo2/30min" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a Free Call</a>
+          <a href="mailto:tramngo2@gmail.com" class="btn-ghost">Send an Email</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">14+</div>
+            <div class="stat-lbl">Years as a grants professional</div>
+          </div>
+          <div>
+            <div class="stat-num">$9M+</div>
+            <div class="stat-lbl">Secured for nonprofits nationwide</div>
+          </div>
+          <div>
+            <div class="stat-num">100%</div>
+            <div class="stat-lbl">Compliant proposals, every time</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section aria-label="The challenge" class="problem">
+      <div class="problem-inner">
+        <h2>You didn't start a nonprofit to spend your days <em>writing grants.</em></h2>
+        <div class="problem-body">
+          <p>
+            Yet here you are — buried in application portals, decoding funder requirements, and trying to fit your entire mission into a 10-page narrative with 47 attachments. Meanwhile, the work that actually matters keeps waiting.
+          </p>
+          <ul class="pain-list" aria-label="Common pain points">
+            <li><span class="pain-dot" aria-hidden="true"></span>Drowning in complex grant databases you don't have time to learn</li>
+            <li><span class="pain-dot" aria-hidden="true"></span>Struggling to translate your impact into funder language</li>
+            <li><span class="pain-dot" aria-hidden="true"></span>Missing deadlines because proposals pull you away from your team</li>
+            <li><span class="pain-dot" aria-hidden="true"></span>Applying to the wrong funders and hearing silence</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section aria-label="Services">
+      <div class="services-wrap">
+        <div class="section-label">What I Do</div>
+        <h2 class="section-h2">Your complete grant operation, handled.</h2>
+        <p class="section-sub">I act as your strategic funding partner — taking the entire exhaustive grant process completely off your plate so you can focus on what you do best.</p>
+
+        <div class="services-grid">
+          <article class="s-card">
+            <div class="s-icon" aria-hidden="true">☁️</div>
+            <h3>Cloud-Based Grant System</h3>
+            <p>A centralized Proposal Boilerplate Library of reusable language, Common Attachments, Grants Tracker, and neatly organized current and archived proposals — so your whole organization runs more efficiently.</p>
+          </article>
+
+          <article class="s-card">
+            <div class="s-icon" aria-hidden="true">🎯</div>
+            <h3>Targeted Prospect Research</h3>
+            <p>I bypass highly saturated grants to find federal, state, and foundation funding perfectly aligned with your mission — so you stop wasting energy on the wrong opportunities.</p>
+          </article>
+
+          <article class="s-card">
+            <div class="s-icon" aria-hidden="true">✍️</div>
+            <h3>Proposal Writing</h3>
+            <p>Compelling, heavily researched, and 100% compliant narratives for foundation and government grants — crafted to demand reviewer attention and move your application to the top of the pile.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section aria-label="About Tram Ngo" class="about">
+      <div class="about-inner">
+        <div class="about-left">
+          <div class="about-name">Tram Ngo</div>
+          <div class="about-role">Founder, Harthunter Consulting</div>
+          <div class="badge-row">
+            <span class="about-badge">📍 Serving nonprofits nationwide</span>
+            <span class="about-badge">🤝 Remote &amp; available</span>
+          </div>
+        </div>
+        <div class="about-right">
+          <p>
+            I've spent over <strong>14 years</strong> as a grants professional, and in that time I've learned that the difference between a nonprofit that thrives and one that struggles often has nothing to do with the quality of their mission — it's their funding strategy.
+          </p>
+          <p>
+            At Harthunter Consulting, I treat your mission with the <strong>exact same passion and urgency that you do.</strong> I don't just write grants. I build systems, identify the right funders, and craft narratives that give your organization the strongest possible chance of being fully funded.
+          </p>
+          <p>
+            I've helped nonprofits across the country secure <strong>over $9 million</strong> — transforming big visions into fully funded realities. Let me do the same for yours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section aria-label="Contact" id="contact">
+      <div class="contact-wrap">
+        <div class="section-label">Let's Talk</div>
+        <h2 class="section-h2">Ready to take grants off your plate?</h2>
+        <p class="section-sub">Reach out directly — no funnels, no friction, just a real conversation about your funding needs.</p>
+
+        <div class="contact-grid">
+          <a href="https://calendly.com/tramngo2/30min" target="_blank" rel="noopener noreferrer" class="c-card">
+            <div class="c-icon cal" aria-hidden="true">📅</div>
+            <div class="c-type">Book a Call</div>
+            <div class="c-value">Free 30-min intro</div>
+          </a>
+
+          <a href="mailto:tramngo2@gmail.com" class="c-card">
+            <div class="c-icon terra" aria-hidden="true">✉️</div>
+            <div class="c-type">Email</div>
+            <div class="c-value">tramngo2@gmail.com</div>
+          </a>
+
+          <a href="tel:+18083487260" class="c-card">
+            <div class="c-icon green" aria-hidden="true">📞</div>
+            <div class="c-type">Phone</div>
+            <div class="c-value">(808) 348-7260</div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/tramngo/" target="_blank" rel="noopener noreferrer" class="c-card">
+            <div class="c-icon blue" aria-label="LinkedIn">in</div>
+            <div class="c-type">LinkedIn</div>
+            <div class="c-value">linkedin.com/in/tramngo</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+   <!-- WIDGET -->
+
+ <!-- Add this to your HTML page, preferably before the closing </body> tag -->
+<script src="https://api.operatorbase.app/widget.js" data-agent="lani" data-key="da_wk_1bbfb9a4ac1a83727d695d93d4de2370" async></script>
+  
+</body>
+</html>
