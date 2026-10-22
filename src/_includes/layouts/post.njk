@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+---
+<article class="post-wrap">
+  <a href="/blog/" class="back-link">All posts</a>
+
+  <header class="post-header">
+    <h1>{{ title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ date | dateOnly }}">{{ date | readableDate }}</time>
+      &middot; {{ site.author }}
+    </p>
+  </header>
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+
+  <aside class="post-cta">
+    <p>Wondering where your organization stands before you write another proposal? The Grant Readiness &amp; Positioning Audit answers that.</p>
+    <a href="/#audit" class="btn-primary">Read about the audit</a>
+  </aside>
+</article>
