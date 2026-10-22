@@ -1,0 +1,11 @@
+# Netlify reads this file on every deploy and it overrides the dashboard
+# settings, so the build config travels with the code.
+
+[build]
+  # Runs Eleventy, which turns src/ into the finished site in _site/.
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  # Eleventy 3 requires Node 18 or newer. Pinned so it cannot drift.
+  NODE_VERSION = "20"
