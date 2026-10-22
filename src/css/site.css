@@ -682,8 +682,9 @@
       padding: clamp(3.5rem, 7vw, 5.5rem) clamp(1.25rem, 4vw, 3rem);
     }
 
-    /* A post's reading column sits on pure white, so the writing has its own
+    /* The blog's reading column sits on pure white, so the writing has its own
        page against the chalk background. */
+    .blog-wrap,
     .post-wrap {
       background: var(--white);
       border: 1px solid var(--border);
