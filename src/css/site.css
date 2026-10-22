@@ -105,14 +105,7 @@
     .ornament {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
       margin-bottom: 1.1rem;
-    }
-    .ornament-line {
-      height: 1px;
-      width: 36px;
-      background: var(--petrol);
-      flex-shrink: 0;
     }
 
     .hero-wrap h1 {
