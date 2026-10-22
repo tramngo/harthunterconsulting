@@ -682,6 +682,16 @@
       padding: clamp(3.5rem, 7vw, 5.5rem) clamp(1.25rem, 4vw, 3rem);
     }
 
+    /* A post's reading column sits on pure white, so the writing has its own
+       page against the chalk background. */
+    .post-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin: clamp(1.75rem, 4vw, 3rem) auto;
+      padding: clamp(2.75rem, 5.5vw, 4rem) clamp(1.5rem, 4vw, 3.25rem);
+    }
+
     .blog-wrap .section-sub { margin-bottom: 3rem; }
 
     .post-list {
