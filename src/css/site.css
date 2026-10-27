@@ -688,6 +688,25 @@
 
     .blog-wrap .section-sub { margin-bottom: 3rem; }
 
+    /* Legal pages carry their own typographic styling from the generator. */
+    .legal-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      max-width: 860px;
+      margin: clamp(1.75rem, 4vw, 3rem) auto;
+      padding: clamp(2rem, 4vw, 3.25rem);
+      overflow-x: auto;
+    }
+
+    .legal-wrap h1 { margin-bottom: 0.5rem; }
+    .legal-wrap h2 { margin: 1.75rem 0 0.75rem; }
+    .legal-wrap h3 { margin: 1.5rem 0 0.6rem; }
+    .legal-wrap table { border-collapse: collapse; margin: 1rem 0; }
+    .legal-wrap td,
+    .legal-wrap th { padding: 0.5rem 0.7rem; }
+    .legal-wrap ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+
     .post-list {
       list-style: none;
       display: flex;
